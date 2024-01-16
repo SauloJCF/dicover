@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; */
+
+  /* Shorthand: color image repeat position/size */
+  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
+#container {
+  width: 360px;
+  /* height: 712px; */
+  border: 1px solid red;
+  margin: 56px auto 0px; /* Lembrar do relogio! */
+  padding: 0 24px;
+}
+
+#profile {
+  text-align: center;
+  border: 1px solid red;
+  /* elementos filhos do tipo  inline são alinhados */
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+  /* Margin auto não funciona em elementos inline */
+}
+
+#profile p {
+  font-weight: 500;
+  font-size: 16px; /*Padrão, não precisa colocar*/
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+/* Links */
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  /* caniuse.com */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: background 0.2s;
+}
+
+/* pseudo selector */
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+}
